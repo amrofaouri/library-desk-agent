@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Desk Agent</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>📚 Library Agent</h2>
+            <button id="new-session-btn" class="btn-primary">+ New Chat</button>
+            <div id="sessions-list" class="sessions-list">
+                <p class="muted">No sessions yet</p>
+            </div>
+        </aside>
+
+        <main class="chat-area">
+            <div class="chat-header">
+                <h3 id="chat-title">New Conversation</h3>
+                <span id="session-id-display" class="muted"></span>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <div class="welcome-message">
+                    <p>👋 Welcome! I'm your Library Desk Agent.</p>
+                    <p>I can help you with:</p>
+                    <ul>
+                        <li>🔍 Finding books by title or author</li>
+                        <li>🛒 Creating orders</li>
+                        <li>📦 Restocking books</li>
+                        <li>💰 Updating prices</li>
+                        <li>📋 Checking order status</li>
+                        <li>📊 Viewing inventory</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <textarea id="message-input" placeholder="Type your message..." rows="1"></textarea>
+                <button id="send-btn" class="btn-send">Send ➤</button>
+            </div>
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
