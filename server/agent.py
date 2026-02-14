@@ -35,7 +35,7 @@ def get_llm():
 def create_agent():
     llm = get_llm()
     system_prompt = get_system_prompt()
-    agent = create_react_agent(llm, ALL_TOOLS, prompt=system_prompt)
+    agent = create_react_agent(llm, ALL_TOOLS, state_modifier=system_prompt)
     return agent
 
 
